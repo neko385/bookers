@@ -4,8 +4,6 @@
     <%= flash[:alert] %>
   <% end %>
 </p>
-
-</p>
 <% if @book.errors.any? %>
 <div id="error_explanation">
   <h2><%= @book.errors.count %>erroes prohibited this book form being saved：</h2>
@@ -24,8 +22,8 @@
 </div>
 
 <div class="field">
-  <label for=book_body>Body</label>
-<%= f.text_area :body %>
+  <label for="book_body">Body</label>
+  <%= f.text_area :body %>
 </div>
 
 <div class="actions">
